@@ -3,9 +3,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def edit
-  end
-
   def create
     @user = User.create(name: params[:user][:name], password: params[:user][:password])
     if @user.errors.empty?
