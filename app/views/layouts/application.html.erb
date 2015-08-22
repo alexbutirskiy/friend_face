@@ -16,13 +16,13 @@
       <li><%= link_to 'Register', new_user_path %></li>
       <li><%= link_to 'Sign In', new_session_path %></li>
     <% else %>
-      <li><%= link_to 'All notes', '#' %></li>
+      <li><%= link_to 'All notes', notes_path %></li>
       <li><%= link_to 'My notes', '#' %></li>
+      <li><%= link_to 'New note', new_note_path %></li>
       <li><%= link_to 'Sign Out', session_path(1), method: :delete%></li>
     <% end %>
   </ul>
 </nav>
-<br>
 
 <%= yield %>
 

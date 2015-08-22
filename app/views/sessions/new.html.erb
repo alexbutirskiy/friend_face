@@ -1,9 +1,11 @@
 <h1>Sign in</h1>
 
+<fildset>
 <%= form_for(:session, url: sessions_path) do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-  <%= form.label :password %>
-  <%= form.text_field :password %>
+  <%= form.label :name %> <br>
+  <%= form.text_field :name %> <br>
+  <%= form.label :password %> <br>
+  <%= form.text_field :password %> <br>
   <%= form.submit "Sign In"%>
 <% end %>
+</fildset>

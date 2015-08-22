@@ -6,13 +6,9 @@ class ApplicationController < ActionController::Base
 
   def index
     @user_status = cookies[:user_status]
-    @user = User.find(cookies[:user_id])
-    byebug
-    puts
+    begin
+      @user = User.find(cookies[:user_id])
+    rescue
+    end
   end
-
-  def signed?
-    @user_status == 'signed_in'
-  end
-
 end

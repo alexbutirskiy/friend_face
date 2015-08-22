@@ -1,0 +1,7 @@
+<h1>New Note</h1>
+
+<%= form_for(@note) do |form| %>
+  <%= form.label :body, 'Note' %> <br>
+  <%= form.text_area :body %> <br>
+  <%= form.submit "Create new note"%>
+<% end %>
